@@ -1,17 +1,16 @@
 {
-  "name": "twitterbot",
+  "name": "weatherbot",
   "version": "1.0.0",
-  "description": "package file for twitterbot",
-  "main": "bot.js",
+  "description": "package file for weatherbot",
+  "main": "weatherbot.js",
   "scripts": {
     "start": "node weatherbot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Mohan C",
   "license": "ISC",
   "dependencies": {
-    "gm": "^1.23.0",
-    "imagemagick": "^0.1.3",
+    "openweathermap": "^1.0.0",
     "twit": "^2.2.5"
   }
 }
