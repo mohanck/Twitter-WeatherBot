@@ -22,8 +22,8 @@ function tweeted(eventMsg){
 
 	switch(fn.toLowerCase()){
 		case "weather":
-			  			weatherInfo(city_name);
-						break;
+			  	weatherInfo(city_name);
+				break;
 		//Add new features here!
 	}
 }
@@ -41,14 +41,14 @@ function getWeatherData(err, data){
     country 	= data.sys.country;
     description = data.weather[0].description;
     iconUrl 	= data.weather[0].iconUrl;
-    min 		= data.main.temp_min;
-    max 		= data.main.temp_max;
-    avg 		= data.main.temp;
+    min 	= data.main.temp_min;
+    max 	= data.main.temp_max;
+    avg 	= data.main.temp;
 
-    text 		=  "All Temperatures in Fahrenheit" +"\r\n"
-		         + "Average:"+ avg +"\r\n"
-		         + "Minimum:"+ min +"\r\n"
-		         + "Maximum:"+ max ;
+    text 	=  "All Temperatures in Fahrenheit" +"\r\n"
+		 + "Average:"+ avg +"\r\n"
+		 + "Minimum:"+ min +"\r\n"
+		 + "Maximum:"+ max ;
 
      getWeatherIcon(iconUrl);
      postTweetsMedia();
@@ -65,7 +65,7 @@ function writeImage(err, res, body) {
 	}
     fs.writeFile('test.png',body,function(err)
 		    		{
-					    if(!err)
+					if(!err)
 					    {
 					    	console.log("The file was saved!");
 					    }
