@@ -1,0 +1,17 @@
+{
+  "name": "twitterbot",
+  "version": "1.0.0",
+  "description": "package file for twitterbot",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node weatherbot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gm": "^1.23.0",
+    "imagemagick": "^0.1.3",
+    "twit": "^2.2.5"
+  }
+}
